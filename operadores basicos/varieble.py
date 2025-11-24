@@ -17,3 +17,5 @@ conjunto = {1, 2, 3}            # set (conjunto)
 
 # Nulo
 nulo = None  # NoneType (valor nulo)
+
+print(inteiro, decimal, complexo, texto, verdadeiro, falso)
