@@ -12,25 +12,17 @@ print("Menor que:", resultado_menor) # Output: Menor que: False
 
 # Maior ou igual a
 resultado_maior_ou_igual = a >= b
-print("Maior ou igual a:", resultado_maior_ou_igual) # Output: Maior ou igual a: True
+print("maior ou igual a:", resultado_maior_ou_igual) # Output: maior ou igual : True
 
 # Menor ou igual a
 resultado_menor_ou_igual = a <= b
-print("Menor ou igual a:", resultado_menor_ou_igual) # Output: Menor ou igual a: False
+print("menor ou igual a:", resultado_menor_ou_igual) # Output: menor ou igual : False
 
-# Igual a
+# igual a
 resultado_igual = a == b
-print("Igual a:", resultado_igual) # Output: Igual a: False
+print("igual: a:", resultado_igual) # Output: igual a: false
 
-# Diferente de
+# Diferete de
 resultado_diferente = a != b
-print("Diferente de:", resultado_diferente) # Output: Diferente de: True
+print("Diferente de:", resultado_diferente)  # Outupt: diferente de: true.
 
-# s operadores relacionais são fundamentais para o controle de fluxo de um programa, como nas estruturas condicionais (if, elif, else).
-#A função de todos esses operadores é comparar o valor à esquerda com o valor à direita. A comparação sempre resulta em um valor do tipo Booleano (o tipo bool), que pode ser apenas True (Verdadeiro) ou False (Falso).
-
-#  Atenção ao "Igual a"
-# É essencial que seus alunos não confundam o operador de atribuição = (usado para dar um valor a uma variável, como a = 10) com o operador de comparação == (usado para perguntar se os valores são iguais, como a == b).
-
-
-#
