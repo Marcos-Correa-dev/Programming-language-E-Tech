@@ -1,15 +1,5 @@
+nome = input("Digite seu nome: ")
+print(f"Olá, {nome}! Bem-vindo(a) ao Python")
 
-# Input
-# nome = input("Digite seu nome: ")
-# print("Olá,", nome)
-#
-# idade = int(input('Qual a sua idade?: '))
-# print("você tem ", idade, " anos")
-#
-#
-# print('fim')
-
-
-nome = "Alice"
-idade = 30
-print('Nome:', nome, "Idade:", idade, sep=", ", end=".\n")
+idade = int(input("Digite sua idade:"))
+print(f"Daqui a 5 anos, você terá {idade + 5} anos.")
