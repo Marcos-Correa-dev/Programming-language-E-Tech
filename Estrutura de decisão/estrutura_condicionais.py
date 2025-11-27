@@ -1,26 +1,38 @@
-idade = int(input("Digite a sua idade: "))
+#
+# # Definindo uma variável
+# idade = 20
+#
+# if idade >=18:
+#     # Código executado se a condição for verdadeira
+#     print("Você é maior de idade")
+# elif 13 <= idade < 18:
+#     # Código executado se o primeiro if der falso
+#     print("Você é adolescente")
+# else:
+#     # Código executado se todas as condições anteriores derem falsas.
+#     print("você é menor de idade")
 
-# --- Estrutura de Decisão para Dirigir ---
+# exemplo com múltiplas condições e operadores lógicos
+
+# numero = 10
+#
+# if numero > 0 and numero % 2 == 0:
+#     print("O numero é positivo e par.")
+# elif numero > 0 and numero % 2 != 0:
+#     print("O numero é positivo e impar.")
+# else:
+#     print("O numero é zero ou negativo.")
+
+
+# Exemplo de estrutura aninhada
+
+idade = 20
+tem_CNH = True
 
 if idade >= 18:
-    # A pessoa é maior de idade, AQUI a CNH é uma possibilidade.
-
-    entrada_carteira = input("Você tem CNH? (sim/nao): ").lower()
-    tem_carteira = (entrada_carteira == "sim")
-
-    if tem_carteira:
-        print("Resultado: Você é maior de idade E tem CNH. Você pode dirigir.")
+    if tem_CNH:
+        print("Você pode dirigir.")
     else:
-        print(" Resultado: Você é maior de idade, mas NÃO tem CNH. Você não pode dirigir legalmente.")
+        print("você não pode dirigir.")
 else:
-    # A pessoa é menor de idade. Não há necessidade de perguntar sobre CNH.
-
-    # Podemos testar o 'mentiroso' aqui, se quisermos mostrar a impossibilidade:
-    entrada_carteira = input("Você tem CNH? (sim/nao): ").lower()
-
-    if entrada_carteira == "sim":
-        print(
-            "ALERTA: Você é menor de idade ({} anos). Não é legalmente possível ter CNH. Você está mentindo!".format(
-                idade))
-    else:
-        print("Resultado: Você é menor de idade ({} anos) e não pode dirigir.".format(idade))
+    print("Você é menor de idade e não deve dirigir.")
