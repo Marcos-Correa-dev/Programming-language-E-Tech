@@ -35,12 +35,12 @@ for valor in pessoa.values():
 
 # Iterando Sobre os Pares Chave-Valor
 
-# Definindo um dicionário com informações de uma pessoa
-pessoa = {"nome": "Alice", "idade": 30, "cidade": "São Paulo"}
-
-# Iterando sobre as chaves e valores
-for chave, valor in pessoa.items():
-    print(f"Chave: {chave}, Valor: {valor}")
+# # Definindo um dicionário com informações de uma pessoa
+# pessoa = {"nome": "Alice", "idade": 30, "cidade": "São Paulo"}
+#
+# # Iterando sobre as chaves e valores
+# for chave, valor in pessoa.items():
+#     print(f"Chave: {chave}, Valor: {valor}")
 
 # Saída Esperada:
 # Chave: nome, Valor: Alice
