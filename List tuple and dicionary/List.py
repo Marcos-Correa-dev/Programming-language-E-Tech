@@ -45,3 +45,19 @@ print(numeros)
 ultimo = numeros.pop()
 print(ultimo)
 print(numeros)
+
+# index()
+
+# retorna o indice da primeira ocorrência
+#  [1,2,3,4]:
+
+posicao = numeros.index(4)
+print(posicao)
+
+
+
+letras = ['A', 'B', 'C', 'D', 'C', 'F']
+# indice   0,   1,   2,   3,   4,   5
+
+posicao_D = letras.index('D')
+print(posicao_D)
