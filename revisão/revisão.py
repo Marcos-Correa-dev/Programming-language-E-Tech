@@ -1,18 +1,15 @@
-# Crie a função calcular_custo_total que aceita
-# um custo fixo obrigatório e utiliza *args para
-# receber os custos de itens variáveis.
-# A função deve retornar o valor total somado.
+def calcula_combustivel(missoes_base, *gastos_adicionais):
 
+    combustivel_base = missoes_base * 100
 
-def calcular_custo_total(custo_base, *itens_comprados):
-    # Lógica: O custo total é o custo_base
-    total_itens = 0
+    total_adicional = 0
+    for gasto in gastos_adicionais:
+        total_adicional += gasto
 
-    for item in itens_comprados:
-        total_itens += item
+    total_geral = combustivel_base + total_adicional
 
-    custo_final = custo_base + total_itens
-    return custo_final
+    print(f"Combustível Base para {missoes_base} missões: {combustivel_base} unidades")
+    print(f"Gastos Adicionais: {gastos_adicionais} (Total: {total_adicional} unidades)")
+    print(f"Total de Combustível Necessário para a Endurance: {total_geral} unidades")
 
-custo_do_pedido = calcular_custo_total(25.0, 10.0, 25.00, 5.0)
-print(f"Custo total do pedido: {custo_do_pedido}")
+calcula_combustivel(2, 50, 25, 10)
