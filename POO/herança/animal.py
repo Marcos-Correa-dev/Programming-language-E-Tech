@@ -2,55 +2,48 @@ class Animal:
     def __init__(self, nome, especie):
         self.nome = nome
         self.especie = especie
-        self.saudavel = True
 
     def fazer_som(self):
-        print(f"{self.nome} faz um som genérico.")
+        print(f"{self.nome} faz som genérico.")
 
-
-class Cachorro(Animal):  # Cachorro HERDA de Animal
-
-    # 1. Construtor (Adiciona o novo atributo 'raca')
+class Cachorro(Animal):
     def __init__(self, nome, especie, raca):
-        # 2. Chama o construtor da classe MÃE (Animal)
-        # O super() inicializa 'nome' e 'especie' para nós.
         super().__init__(nome, especie)
-        # 3. Inicializa o novo atributo exclusivo da Subclasse
         self.raca = raca
 
-    # 4. Sobrescreve o metodo (Polimorfismo Básico)
     def fazer_som(self):
-        print(f"{self.nome} da raça {self.raca} está latindo: Au Au!")
+        print(f"{self.nome} da raça {self.raca} está latindo: au au")
 
-    # 5. Metodo exclusivo
     def mostrar_detalhes(self):
-        print(f"Nome: {self.nome} | Espécie: {self.especie} | Raça: {self.raca}")
-
+        print(f"Nome: {self.nome} | Especie: {self.especie} | Raça: {self.raca}")
 
 class Gato(Animal):
-    def __init__(self, nome, especie, cor_pelo):
-        # 1. Chama o construtor da Superclasse (Animal)
+    def __init__(self, nome, especie, cor_pelo, raca):
+
         super().__init__(nome, especie)
 
-        # 2. Inicializa o atributo exclusivo da Subclasse
         self.cor_pelo = cor_pelo
+        self.raca = raca
 
+    def fazer_som(self):
+        print(f"{self.nome} da raça {self.raca} está miando: miau miau!")
 
+    def mostrar_detalhes(self):
+        print(f"Nome {self.nome} | Especie: {self.especie} | Raça: {self.raca} | Cor do pelo: {self.cor_pelo}")
 
-# Criação do Objeto Cachorro
-doguinho = Cachorro("Buddy", "Canino", "Golden Retriever")
+# criação de objeto
+doguinho = Cachorro("Ducky", "Canino", "Golden Retriever")
 
-print("--- Testando Herança de Atributos e Métodos ---")
-
-# Acessando Atributos herdados:
 print(f"Nome herdado: {doguinho.nome}")
-print(f"Status de saúde herdado: {doguinho.saudavel}") # Atributo inicializado no __init__ de Animal
 
-# Chamando o Método Sobrescrito (Polimorfismo):
-doguinho.fazer_som() # Saída: Buddy da raça Golden Retriever está latindo: Au Au!
+doguinho.fazer_som() # Ducky da raça Golden Retriever está latindo: au au
 
-# Chamando o Método exclusivo:
 doguinho.mostrar_detalhes()
 
-gato_mimi = Gato("Mimi", "Felino", "Branco")
-print(f"Nome do gato: {gato_mimi.nome} | Cor do Pelo: {gato_mimi.cor_pelo} | Saúde Herdada: {gato_mimi.saudavel}")
+gato = Gato("Laura", "Felino", "Branco", "Siamês")
+
+print(f"Nome herdado: {gato.nome}")
+
+gato.fazer_som()
+
+gato.mostrar_detalhes()
