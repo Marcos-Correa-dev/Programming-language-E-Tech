@@ -12,7 +12,6 @@ class Aluno:
         return self.__nota
 
 
-    #SETTER: alterar a nota apenas se estiver entre 0 e 10
     def set_nota(self, valor):
         if 0 <= valor <= 20:
             self.__nota = valor
